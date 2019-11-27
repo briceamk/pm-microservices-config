@@ -1,0 +1,14 @@
+server:
+  port: 5010
+  servlet:
+    contextPath: /uaa
+spring:
+  #database config
+  datasource:
+    url: jdbc:postgresql://localhost:5432/uaa_db?createDatabaseIfNotExist=true
+  #liquibase config
+  liquibase:
+    enabled: true
+    changeLog: classpath:/db/changelog/db.changelog-master.xml
+
+  

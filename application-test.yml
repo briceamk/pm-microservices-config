@@ -6,6 +6,7 @@ management:
   endpoint:
     health:
       showDetails: always
+      
 eureka:
   instance:
     prefer-ip-address: true
@@ -15,3 +16,26 @@ eureka:
     registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:7010/discovery/eureka
+      
+spring:
+  datasource:
+    username: root
+    password: mysql
+    driverClassName: org.postgresql.Driver
+    tomcat:
+      maxWait: 20000
+      maxActive: 50
+      maxIdle: 20
+      minIdle: 15
+      validation-query: SELECT 1
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    hibernate:
+      ddlAuto: update
