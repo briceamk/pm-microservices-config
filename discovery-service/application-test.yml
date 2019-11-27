@@ -1,0 +1,9 @@
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+server:
+  port: 7010
+management:
+  server:
+    port: 6010
