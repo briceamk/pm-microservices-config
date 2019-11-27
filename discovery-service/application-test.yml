@@ -4,6 +4,8 @@ eureka:
     fetchRegistry: false
 server:
   port: 7010
+  servlet:
+    context-path: /discovery
 management:
   server:
     port: 6010
