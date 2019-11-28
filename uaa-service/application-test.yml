@@ -10,5 +10,12 @@ spring:
   liquibase:
     enabled: true
     changeLog: classpath:/db/changelog/db.changelog-master.xml
+check:
+  user:
+    scopes: true
+logging:
+  level:
+    org:
+      springframwork: debug
 
   

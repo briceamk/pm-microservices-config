@@ -19,8 +19,8 @@ eureka:
       
 spring:
   datasource:
-    username: root
-    password: mysql
+    username: java
+    password: java123
     driverClassName: org.postgresql.Driver
     tomcat:
       maxWait: 20000
@@ -38,4 +38,4 @@ spring:
           lob:
             non_contextual_creation: true
     hibernate:
-      ddlAuto: update
+      ddlAuto: none
