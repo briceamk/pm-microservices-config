@@ -10,6 +10,6 @@ zuul:
     auth-service:
       path: /uaa/** 
       serviceId: uaa-service 
-      url: http://localhost:5000/uaa
+      url: http://localhost:5010
       stripPrefix: false 
       sensitiveHeaders: 

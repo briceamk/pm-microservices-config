@@ -13,9 +13,5 @@ spring:
 check:
   user:
     scopes: true
-logging:
-  level:
-    org:
-      springframwork: debug
 
   
