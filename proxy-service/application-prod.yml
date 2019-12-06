@@ -1,0 +1,15 @@
+server:
+  port: 5000
+    
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+  routes:
+    auth-service:
+      path: /uaa/** 
+      serviceId: uaa-service 
+      url: http://localhost:5010
+      stripPrefix: false 
+      sensitiveHeaders: 

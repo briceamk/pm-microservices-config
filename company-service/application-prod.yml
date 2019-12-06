@@ -1,17 +1,14 @@
 server:
-  port: 5010
+  port: 5020
   servlet:
-    contextPath: /uaa
+    contextPath: /company
 spring:
   #database config
   datasource:
-    url: jdbc:postgresql://localhost:5432/uaa_db
+    url: jdbc:postgresql://localhost:5432/company_db
   #liquibase config
   liquibase:
     enabled: true
     changeLog: classpath:/db/changelog/db.changelog-master.xml
-check:
-  user:
-    scopes: true
 
   
